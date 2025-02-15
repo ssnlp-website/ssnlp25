@@ -10,8 +10,7 @@
     <meta name="author" content="">
     <meta name="keywords"
           content="SSNLP 2025, Singapore Symposium">
-    <title>SSNLP 2025: The 2025 Singapore Symposium on Natural Language Processing
-    </title>
+    <title>SSNLP 2025: The 2025 Singapore Symposium on Natural Language Processing</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -34,6 +33,7 @@
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    
 
     <style type="text/css">
         .navbar-text > a {
@@ -42,12 +42,12 @@
         }
 
         .white_bg {
-            background-color: #ffe3d6;
+            background-color: rgba(255, 255, 255, 0.25);
             padding: 3px;
         }
 
         .blue_bg {
-            background-color: rgba(0, 123, 255, 0.486);
+            background-color: rgb(0, 123, 255);
             padding: 3px;
         }
 
@@ -99,6 +99,38 @@
             transition: all .2s ease-in-out;
 
         }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+        .content {
+            /* position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white; */
+            z-index: 2; /* Higher than overlay */
+            font-family:  'Poppins', sans-serif;
+        }
+
+        /* .content h1 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .content p {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        } */
         
     </style>
 </head>
@@ -113,7 +145,7 @@
                 SSNLP 2025
             </a> -->
             <a class="navbar-brand js-scroll-trigger" href="#">
-                <img src="images/icon-removebg-preview.png" width="180" height="50">
+                <img src="images/icon.png" width="45%">
             </a>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -130,18 +162,21 @@
                 </li>
 <!-- Speakers -->
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#organizers">Organizers</a>
+                    <a class="nav-link js-scroll-trigger" href="#speakers">Speaker</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#partners">Partners</a>
+                    <a class="nav-link js-scroll-trigger" href="#organizers">Organizers</a>
                 </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#partners">Partners</a>
+                </li> -->
 <!-- Partners, Photos -->
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#location">Location</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#past-ssnlp">Past SSNLP</a>
-                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#past-ssnlp" style="gap: 10px;">Past SSNLP</a>
+                </li> -->
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
                 </li>
@@ -150,10 +185,24 @@
     </div>
 </nav>
 
-<header class="bg-primary text-white">
+<header class="bg-primary text-white" style="position: relative; padding: 150px 0;">
+    <div style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+        z-index: 1;"></div>
     <div class="container text-center">
-        <h1 style="font-size: 60px;font-weight: bold;color: #1B2288;">SSNLP 2025</h1>
-        <h2 style="font-size: 35px;color: #ffffff;background-color: rgba(0, 123, 255, .25);">The 2025 Singapore Symposium on Natural Language Processing</h2>
+        
+    <div class="content" style="position: relative; z-index: 2;">
+        <!-- <h1 style="font-size: 60px;font-weight: bold;color: #1B2288;">SSNLP 2025</h1> -->
+        <h1 style="font-size: 60px;color: #ffffff;">The <font  color="red">2025</font> Singapore Symposium on Natural Language Processing</h1> 
+        <p class="lead" style="font-size: 25px;color: #ffffff;">April 23, 2025, SUTD</P>
+        <!-- background-color: rgba(0, 123, 255, .25); -->
+    </div>
+        
     </div>
 </header>
 
@@ -164,10 +213,10 @@
                 <h2>Welcome!</h2>
 
                 <p style="text-align: justify;">
-                    We are excited to announce the <b>Singapore Symposium on Natural Language Processing 2025 (SSNLP'25)</b> will take place on Wednesday, April 23, 2025, as a full-day event. SSNLP is a premier platform for Principal Investigators (PIs) in Singapore to present ongoing and upcoming work, fostering collaboration and receiving valuable international feedback. We welcome poster submissions on all aspects of Natural Language Processing (NLP). This is an excellent opportunity for both faculties and students to gain international exposure and engage with leading experts in the field.
+                    We are excited to announce the <b>Singapore Symposium on Natural Language Processing 2025 (SSNLP'25)</b>, which will take place on <b>Wednesday, April 23, 2025</b>, as a full-day event. SSNLP is a premier platform for academic and industrial researchers in Singapore to present ongoing and upcoming work, fostering community building, idea exchange, and collaboration. SSNLP'25 is an excellent opportunity for faculties and students to gain international exposure and engage with leading experts in the field. 
                 </p>
                 <p style="text-align: justify;">
-                    We welcome submissions on all aspects of Natural Language Processing (NLP). This is an excellent opportunity for both faculties and students to gain international exposure and engage with leading experts in the field.
+                    We welcome submissions on all aspects of Natural Language Processing (NLP). All accepted papers will be presented as posters. 
                     <font color="red">The submission deadline is February 28, 23:59, 2025</font>!
                 </p>
 
@@ -250,14 +299,14 @@
                                     <td class="column100 column1" data-column="column1">09:00 - 09:20</td>
                                     <td class="column100 column2" data-column="column2">
                                         <strong>Registration</strong>
-                                        <br> <em>Location:</em> &nbsp; <font color="red">Foyer, Level 1, Auditorium</font>
+                                        <br> <em>Location:</em> &nbsp; <font color="black">Foyer, Level 1, Auditorium</font>
                                     </td>
                                 </tr>
 
                                 <tr class="row100">
                                     <td class="column100 column1" data-column="column1">09:20 - 09:30</td>
                                     <td class="column100 column2" data-column="column2">
-                                        <a style="color: #D90D0DFF;">
+                                        <a style="color: #3a0ca3;">
                                             <strong>Opening Remarks</strong>
                                         </a>
                                         <!-- <br> <em>speaker:</em> &nbsp; <font color="red">Jason Wei</font>
@@ -270,7 +319,7 @@
                                         <a style="color: #007bff;">
                                             <strong>Keynote 1 (each 45mins + 15mins Q&A) </strong>
                                         </a>
-                                        <br> <em>speakers:</em> &nbsp; <font color="red">TBD</font>
+                                        <br> <em>speakers:</em> &nbsp; <font color="black">TBD</font>
 				                        <!-- <br> <em>session chairs:</em> &nbsp; Yang Deng & Anh Tuan Luu &nbsp;  &nbsp; -->
                                     </td>
                                 </tr>
@@ -279,7 +328,7 @@
                                     <td class="column100 column1" data-column="column1">10:30 - 10:45</td>
                                     <td class="column100 column2" data-column="column2">
                                         <a style="color: #000000;">
-                                        <a style="color: #ffc107;">
+                                        <a style="color: #fdc500;">
                                             <strong>Break</strong>
                                         </a>
 					                    <!-- <br> <em>session chair:</em> &nbsp; Haonan Wang &nbsp;  &nbsp; -->
@@ -291,7 +340,7 @@
                                     <td class="column100 column1" data-column="column1">10:45 - 11:45</td>
                                     <td class="column100 column2" data-column="column2">
                                         <a  style="color: #007bff;"><strong>Keynote 2 (each 45mins + 15mins Q&A)</strong> </a>
-                                        <br> <em>speakers:</em> &nbsp; <font color="red">TBD</font>
+                                        <br> <em>speakers:</em> &nbsp; <font color="black">TBD</font>
                                     </td>
                                 </tr>
 
@@ -299,8 +348,8 @@
                                 <tr class="row100">
                                     <td class="column100 column1" data-column="column1">11:45 - 13:15</td>
                                     <td class="column100 column2" data-column="column2">
-                                        <a style="color: #bd00ef;"><strong>Poster Session 1</strong></a>
-                                        <br> <font color="red"><em>(Buffet Lunch)</em></font>
+                                        <a style="color: #D90D0DFF;"><strong>Poster Session 1</strong></a>
+                                        <br> <font color="black"><em>(Buffet Lunch)</em></font>
 				                    </td>
                                 </tr>
                                 
@@ -308,7 +357,7 @@
                                     <td class="column100 column1" data-column="column1">13:15 - 13:30</td>
                                     <td class="column100 column2" data-column="column2">
                                         <a style="color: #000000;">
-                                        <a style="color: #ffc107;">
+                                        <a style="color: #fdc500;">
                                             <strong>Break</strong>
                                         </a>
 					                    <!-- <br> <em>session chair:</em> &nbsp; Haonan Wang &nbsp;  &nbsp; -->
@@ -319,7 +368,7 @@
                                     <td class="column100 column1" data-column="column1">13:30 - 14:30</td>
                                     <td class="column100 column2" data-column="column2">
                                         <a  style="color: #007bff;"><strong>Keynote 3 (each 45mins + 15mins Q&A)</strong> </a>
-                                        <br> <em>speakers:</em> &nbsp; <font color="red">TBD</font>
+                                        <br> <em>speakers:</em> &nbsp; <font color="black">TBD</font>
                                     </td>
                                 </tr>
 
@@ -327,8 +376,8 @@
                                 <tr class="row100">
                                     <td class="column100 column1" data-column="column1">14:30 - 16:00</td>
                                     <td class="column100 column2" data-column="column2">
-                                        <a style="color: #bd00ef;"><strong>Poster Session 2</strong></a>
-                                        <br> <font color="red"><em>(Coffee Break)</em></font>
+                                        <a style="color: #D90D0DFF;"><strong>Poster Session 2</strong></a>
+                                        <br> <font color="black"><em>(Coffee Break)</em></font>
 				                    </td>
                                 </tr>
 
@@ -336,7 +385,7 @@
                                     <td class="column100 column1" data-column="column1">16:00 - 17:00</td>
                                     <td class="column100 column2" data-column="column2">
                                         <a  style="color: #007bff;"><strong>Keynote 4 (each 45mins + 15mins Q&A)</strong> </a>
-                                        <br> <em>speakers:</em> &nbsp; <font color="red">TBD</font>
+                                        <br> <em>speakers:</em> &nbsp; <font color="black">TBD</font>
                                     </td>
                                 </tr>
 
@@ -345,7 +394,7 @@
                                 <tr class="row100">
                                     <td class="column100 column1" data-column="column1">17:00 - 17:10</td>
                                     <td class="column100 column2" data-column="column2">
-                                        <a style="color: #2bc94f;"><strong>Closing Remarks</strong></a>
+                                        <a style="color: #3a0ca3;"><strong>Closing Remarks</strong></a>
                                     </td>
                                 </tr>
 
@@ -353,7 +402,7 @@
                                 <tr class="row100">
                                     <td class="column100 column1" data-column="column1">18:00 - 19:00</td>
                                     <td class="column100 column2" data-column="column2">
-                                        <a  style="color: #ffc107;">
+                                        <a  style="color: #fdc500;">
                                             <strong>Dinner for Organizers and Speakers</strong>
                                         </a>
                                     </td>
@@ -381,12 +430,11 @@
                     <h2 class="title">Poster Presentations</h2>
                 </div>
                 <p style="text-align: justify;">
-                    Oral presentations are for 12 minutes plus 3 minutes for immediate questions. 
 			        Poster boards can accommodate (1m x 1m) sized posters, in either portrait or landscape.
-			        We arrange the posters into Poster Session 1 and Poster Session 2, divided as follows, with each containing around 20 posters.
+			        We arrange the posters into Poster Session 1 and Poster Session 2, divided as follows, with each containing around 30 posters.
                 </p>
                 <p style="text-align: justify;color: #2014c9;">
-                    The detailed schedule will be announced soon. Stay tuned!
+                    The detailed presentations will be announced soon. Stay tuned!
                 </p>    
             </div>  	
         </div>
@@ -407,7 +455,7 @@
                 </p>
                 
                 <p style="text-align: justify;color: #2014c9;">
-                    The detailed introduction of keynote speakers will be announced soon. Stay tuned!v
+                    The detailed introduction of keynote speakers will be announced soon. Stay tuned!
                 </p>
                 <div class="accordion" id="accordion">
                     <div class="table-responsive">
@@ -629,15 +677,15 @@ He/She is a Professor.
                     <a href="https://www.imda.gov.sg/about-imda/emerging-technologies-and-research">
                     <img src="images/imda.png" width="220" style="margin-right: 30px">
                     </a>
-                    <a href="https://nus.edu.sg/">
+                    <!-- <a href="https://nus.edu.sg/">
                         <img src="images/nus.png" width="190" style="margin-right: 20px">
-                    </a>
-                    <a href="https://www.ntu.edu.sg">
+                    </a> -->
+                    <!-- <a href="https://www.ntu.edu.sg">
                         <img src="images/ntu.png" width="230" style="margin-right: 20px">
-                    </a>
-                    <a href="https://www.smu.edu.sg/">
-                    <img src="images/smu.png" width="230" style="margin-left: 100px">
-                    </a>
+                    </a> -->
+                    <!-- <a href="https://www.smu.edu.sg/">
+                        <img src="images/smu.png" width="230" style="margin-left: 100px">
+                    </a> -->
                     <a href="https://www.sutd.edu.sg/">
                         <img src="images/sutd.png" width="180" style="margin-left: 80px">
                     </a>
@@ -708,7 +756,7 @@ He/She is a Professor.
 </section>
 
 
-<section id="partners" class="bg-light">
+<!-- <section id="partners" class="bg-light">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto">
@@ -731,7 +779,7 @@ He/She is a Professor.
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <!--
 <section id="photos" class="bg-light">
@@ -777,8 +825,7 @@ He/She is a Professor.
                 <p>
                  <b>SSNLP 2024</b> will be held at the <b>SUTD, 8 Somapah Rd, Singapore 487372</b>.
                 </p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7251542578433!2d103.96118357575315!3d1.3412633616017524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da3cd899f260cb%3A0x99becabc6d025518!2z5paw5Yqg5Z2h56eR5oqA6K6-6K6h5aSn5a2m!5e0!3m2!1szh-CN!2ssg!4v1739528066078!5m2!1szh-CN!2ssg" width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7977.4503259942585!2d103.963759!3d1.341258!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da3cd899f260cb%3A0x99becabc6d025518!2sSingapore%20University%20of%20Technology%20and%20Design%20(SUTD)!5e0!3m2!1sen!2ssg!4v1739600767784!5m2!1sen!2ssg" width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
 </section>
